@@ -1,23 +1,32 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
-import Profile from "@/views/Profile.vue";
-import Projects from "@/views/Projects.vue";
-import Discover from "@/views/Discover.vue";
+import { Discover, DiscoverSidebar } from "@/views/discover/index";
+import { Profile, ProfileSidebar } from "@/views/profile/index";
+import { Projects, ProjectsSidebar } from "@/views/projects/index";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Discover",
-    component: Discover,
+    components: {
+      content: Discover,
+      sidebar: DiscoverSidebar,
+    },
   },
   {
     path: "/projects",
     name: "Projects",
-    component: Projects,
+    components: {
+      content: Projects,
+      sidebar: ProjectsSidebar,
+    },
   },
   {
     path: "/profile",
     name: "Profile",
-    component: Profile,
+    components: {
+      content: Profile,
+      sidebar: ProfileSidebar,
+    },
   },
 ];
 
