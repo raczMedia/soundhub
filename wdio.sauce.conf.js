@@ -28,14 +28,6 @@ exports.config = {
   maxInstances: 10,
   capabilities: [
     {
-      browserName: "firefox",
-      browserVersion: "latest",
-      platformName: "Windows 10",
-      "sauce:options": {
-        build: `Build ${BUILD_ID}`,
-      },
-    },
-    {
       browserName: "chrome",
       browserVersion: "latest",
       platformName: "Windows 10",

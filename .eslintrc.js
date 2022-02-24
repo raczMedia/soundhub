@@ -9,9 +9,7 @@ module.exports = {
     "@vue/typescript/recommended",
     "@vue/prettier",
     "@vue/prettier/@typescript-eslint",
-    "plugin:wdio/recommended"
   ],
-  plugins: ["wdio"],
   parserOptions: {
     ecmaVersion: 2020,
   },
