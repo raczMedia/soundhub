@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Profile
-  </div>
+  <div>Profile</div>
 </template>
 
 <script lang="ts">

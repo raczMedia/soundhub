@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Discover
-  </div>
+  <div>Discover</div>
 </template>
 
 <script lang="ts">
