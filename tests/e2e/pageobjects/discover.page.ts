@@ -6,7 +6,6 @@ class DiscoverPage {
   getElement(selector: string) {
     return $(selector);
   }
-
 }
 
-export default new LandingPage();
+export default new DiscoverPage();

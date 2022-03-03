@@ -1,19 +1,16 @@
-import { Given, When, Then } from "@wdio/cucumber-framework";
-import LandingPage from "../pageobjects/landing.page";
+import { Given, Then, When } from "@wdio/cucumber-framework";
+import DiscoverPage from "../pageobjects/discover.page";
 
-let button: WebdriverIO.Element | null;
+let page: WebdriverIO.Element | null;
 
-Given(/^The app has a landing page$/, () => {
+Given("The app has a discover page", () => {
   DiscoverPage.open();
 });
 
-When(
-  /^I view the landing page with "(.*)" button$/,
-  async (buttonIdenifier) => {
-    button = await LandingPage.getComponentByName(buttonIdenifier);
-  }
-);
+When("I view the discover page with discover container", async () => {
+  page = await DiscoverPage.getElement(`[aria-label="Discover Page"]`);
+});
 
-Then(/^The landing page should have a signin button$/, async () => {
-  expect(button).toBeDisplayed();
+Then("The discover page should be viewable", async () => {
+  expect(page).toBeDisplayed();
 });

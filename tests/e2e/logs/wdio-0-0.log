@@ -1,0 +1,9 @@
+2022-03-03T06:27:12.317Z ERROR @wdio/config:ConfigParser: Failed loading configuration file: /Users/joeracz/Sites/growth/soundhub/wdio.local.conf.ts: Cannot use import statement outside a module
+defined (reading 'emit')
+    at Runner._shutdown (/Users/joeracz/Sites/growth/soundhub/node_modules/@wdio/runner/build/index.js:300:24)
+    at Runner.run (/Users/joeracz/Sites/growth/soundhub/node_modules/@wdio/runner/build/index.js:53:25)
+    at process.<anonymous> (/Users/joeracz/Sites/growth/soundhub/node_modules/@wdio/local-runner/build/run.js:24:30)
+    at process.emit (node:events:402:35)
+    at process.emit (node:domain:475:12)
+    at emit (node:internal/child_process:917:12)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)

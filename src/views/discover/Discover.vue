@@ -1,5 +1,5 @@
 <template>
-  <div>Discover</div>
+  <section aria-label="Discover Page">Discover</section>
 </template>
 
 <script lang="ts">
