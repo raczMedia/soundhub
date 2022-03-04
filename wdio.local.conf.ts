@@ -17,8 +17,8 @@ exports.config = {
       acceptInsecureCerts: true,
       "goog:chromeOptions": {
         args: process.argv.includes("--headless")
-            ? ["--headless", "--disable-gpu"]
-            : [],
+          ? ["--headless", "--disable-gpu"]
+          : [],
       },
     },
   ],

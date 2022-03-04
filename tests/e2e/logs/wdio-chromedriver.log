@@ -2,4 +2,4 @@ Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-re
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 IPv4 port not available. Exiting...
-[1646288832.066][SEVERE]: bind() failed: Address already in use (48)
+[1646430090.130][SEVERE]: bind() failed: Address already in use (48)

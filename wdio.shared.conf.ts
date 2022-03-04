@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import path from "path";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
 exports.config = {
   specs: ["./tests/e2e/features/*.feature"],

@@ -1,5 +1,6 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { config } = require("./wdio.shared.conf.ts");
+import { config } from "./wdio.shared.conf.ts";
+
+const BUILD_ID = Math.ceil(Date.now() / 1000);
 
 exports.config = {
   /**
@@ -7,18 +8,31 @@ exports.config = {
    */
   ...config,
   /**
-   * config for local testing
+   * config for testing on Sauce Labs
    */
-  maxInstances: 1,
-  services: ["chromedriver", "geckodriver"],
+  user: process.env.SAUCE_USERNAME,
+  key: process.env.SAUCE_ACCESS_KEY,
+  region: "us",
+  headless: process.argv.includes("--headless"),
+
+  services: [
+    [
+      "sauce",
+      {
+        sauceConnect: true,
+        tunnelIdentifier: "Vue.js Integration tests",
+      },
+    ],
+  ],
+
+  maxInstances: 10,
   capabilities: [
     {
       browserName: "chrome",
-      acceptInsecureCerts: true,
-      "goog:chromeOptions": {
-        args: process.argv.includes("--headless")
-            ? ["--headless", "--disable-gpu"]
-            : [],
+      browserVersion: "latest",
+      platformName: "Windows 10",
+      "sauce:options": {
+        build: `Build ${BUILD_ID}`,
       },
     },
   ],
