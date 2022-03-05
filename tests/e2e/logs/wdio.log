@@ -1,0 +1,13 @@
+2022-03-05T05:15:21.596Z DEBUG @wdio/utils:initialiseServices: initialise service "chromedriver" as NPM package
+2022-03-05T05:15:21.617Z DEBUG @wdio/utils:initialiseServices: initialise service "geckodriver" as NPM package
+2022-03-05T05:15:21.637Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-03-05T05:15:21.637Z INFO chromedriver: Start Chromedriver (/Users/joeracz/Sites/growth/soundhub/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=9515 --url-base=/
+2022-03-05T05:15:21.750Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 113ms
+2022-03-05T05:15:21.751Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-03-05T05:15:21.751Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2022-03-05T05:15:21.751Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,/Users/joeracz/Sites/growth/soundhub/wdio.local.conf.ts,--headless,--baseUrl=http://localhost:8081/
+2022-03-05T05:15:24.586Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+2022-03-05T05:15:24.586Z INFO @wdio/cli:launcher: Run onComplete hook
+2022-03-05T05:15:24.586Z DEBUG @wdio/cli:utils: Finished to run "onComplete" hook in 0ms
+2022-03-05T05:15:24.610Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-03-05T05:15:24.863Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

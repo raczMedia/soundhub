@@ -1,5 +1,5 @@
 <template>
-  <div>Discover</div>
+  <div aria-label="testing this">Discover</div>
 </template>
 
 <script lang="ts">

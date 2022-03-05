@@ -16,7 +16,8 @@
       "jest",
       "mocha",
       "@wdio/mocha-framework",
-      "@wdio/sync"
+      "@wdio/sync",
+      "webdriverio/sync"
     ],
     "paths": {
       "@/*": [
