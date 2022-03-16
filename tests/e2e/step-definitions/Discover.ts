@@ -12,5 +12,5 @@ When("I view the discover page with discover container", async () => {
 });
 
 Then("The discover page should be viewable", async () => {
-  expect(page).toBeExisting();
+  await expect(page).toBeExisting();
 });
