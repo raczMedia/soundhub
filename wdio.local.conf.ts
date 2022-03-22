@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { config } = require("./wdio.shared.conf.ts");
 
 exports.config = {
@@ -17,8 +16,8 @@ exports.config = {
       acceptInsecureCerts: true,
       "goog:chromeOptions": {
         args: process.argv.includes("--headless")
-            ? ["--headless", "--disable-gpu"]
-            : [],
+          ? ["--headless", "--disable-gpu"]
+          : [],
       },
     },
   ],

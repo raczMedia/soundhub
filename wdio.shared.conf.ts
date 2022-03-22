@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import path from "path";
 
 exports.config = {
@@ -7,7 +6,6 @@ exports.config = {
   outputDir: path.join(__dirname, "tests/e2e/logs"),
   bail: 0,
   waitforTimeout: 1000,
-
   specFileRetries: 0,
   specFileRetriesDeferred: false,
   reporters: ["spec"],

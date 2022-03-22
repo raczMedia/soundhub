@@ -1,4 +1,4 @@
-import { config } from "./wdio.shared.conf.ts";
+import { config } from "./wdio.shared.conf";
 
 const BUILD_ID = Math.ceil(Date.now() / 1000);
 
@@ -27,6 +27,14 @@ exports.config = {
 
   maxInstances: 10,
   capabilities: [
+    {
+      browserName: "firefox",
+      browserVersion: "latest",
+      platformName: "Windows 10",
+      "sauce:options": {
+        build: `Build ${BUILD_ID}`,
+      },
+    },
     {
       browserName: "chrome",
       browserVersion: "latest",
